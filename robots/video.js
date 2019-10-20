@@ -5,6 +5,8 @@ const path = require('path')
 const rootPath = path.resolve(__dirname, '..')
 
 async function robot() {
+  console.log('> [video-robot] Starting...');
+  
 
     const content = state.load()
 
@@ -129,7 +131,7 @@ async function robot() {
                         return reject(error)
                     }
 
-                    console.log('> Creating YouTube Thumbnail');
+                    console.log('> [video-robot] YouTube Thumbnail created');
                     resolve()
                     
                 })
